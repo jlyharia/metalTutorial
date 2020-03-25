@@ -13,6 +13,7 @@
 		B2FA6A232427383B00A07A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FA6A212427383B00A07A9F /* Main.storyboard */; };
 		B2FA6A2F2427383C00A07A9F /* metal_0_first_sceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA6A2E2427383C00A07A9F /* metal_0_first_sceneTests.swift */; };
 		B2FA6A3A2427395100A07A9F /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA6A392427395100A07A9F /* MetalView.swift */; };
+		B2FA6A3D2427497E00A07A9F /* BasicShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = B2FA6A3C2427497E00A07A9F /* BasicShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		B2FA6A2E2427383C00A07A9F /* metal_0_first_sceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_0_first_sceneTests.swift; sourceTree = "<group>"; };
 		B2FA6A302427383C00A07A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FA6A392427395100A07A9F /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		B2FA6A3C2427497E00A07A9F /* BasicShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BasicShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				B2FA6A392427395100A07A9F /* MetalView.swift */,
-				B2FA6A182427383900A07A9F /* AppDelegate.swift */,
-				B2FA6A1C2427383B00A07A9F /* Assets.xcassets */,
 				B2FA6A212427383B00A07A9F /* Main.storyboard */,
-				B2FA6A242427383B00A07A9F /* Info.plist */,
-				B2FA6A252427383B00A07A9F /* metal_0_first_scene.entitlements */,
-				B2FA6A1E2427383B00A07A9F /* Preview Content */,
+				B2FA6A3C2427497E00A07A9F /* BasicShader.metal */,
+				B2FA6A3B24273DF800A07A9F /* otherFiles */,
 			);
 			path = metal_0_first_scene;
 			sourceTree = "<group>";
@@ -104,6 +103,18 @@
 				B2FA6A302427383C00A07A9F /* Info.plist */,
 			);
 			path = metal_0_first_sceneTests;
+			sourceTree = "<group>";
+		};
+		B2FA6A3B24273DF800A07A9F /* otherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B2FA6A1E2427383B00A07A9F /* Preview Content */,
+				B2FA6A182427383900A07A9F /* AppDelegate.swift */,
+				B2FA6A1C2427383B00A07A9F /* Assets.xcassets */,
+				B2FA6A242427383B00A07A9F /* Info.plist */,
+				B2FA6A252427383B00A07A9F /* metal_0_first_scene.entitlements */,
+			);
+			path = otherFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			files = (
 				B2FA6A3A2427395100A07A9F /* MetalView.swift in Sources */,
 				B2FA6A192427383900A07A9F /* AppDelegate.swift in Sources */,
+				B2FA6A3D2427497E00A07A9F /* BasicShader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +371,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = metal_0_first_scene/metal_0_first_scene.entitlements;
+				CODE_SIGN_ENTITLEMENTS = metal_0_first_scene/otherFiles/metal_0_first_scene.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"metal_0_first_scene/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"metal_0_first_scene/otherFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 85S73G62T2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = metal_0_first_scene/Info.plist;
+				INFOPLIST_FILE = metal_0_first_scene/otherFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -382,14 +395,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = metal_0_first_scene/metal_0_first_scene.entitlements;
+				CODE_SIGN_ENTITLEMENTS = metal_0_first_scene/otherFiles/metal_0_first_scene.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"metal_0_first_scene/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"metal_0_first_scene/otherFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 85S73G62T2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = metal_0_first_scene/Info.plist;
+				INFOPLIST_FILE = metal_0_first_scene/otherFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

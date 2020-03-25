@@ -706,7 +706,7 @@
             <objects>
                 <viewController id="nNQ-uv-Gvb" sceneMemberID="viewController">
                     <view key="view" id="ocT-lA-x9J" customClass="MetalView" customModule="metal_0_first_scene" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
